@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////////////////////////////////////
+//  01 - Global
+/////////////////////////////////////////////////////////////////////*/
+
+* {
+  outline: none !important;
+}
+
+body {
+  font-family: 'Lato' Calibri, Arial, sans-serif;
+    color: #222;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+p, a, li{
+    font-family: 'Oxygen', sans-serif;
+}
+a{
+   transition: all 0.3s ease-out;
+   position: relative;
+   padding: .5em;
+   margin: -.5em;
+}
+
+
+a:focus,
+a:hover {
+   text-decoration: none;
+   color: #00ceb8;
+}
+
+.img_res{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
