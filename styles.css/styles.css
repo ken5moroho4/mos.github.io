@@ -4,25 +4,32 @@
 //  01 - Global
 /////////////////////////////////////////////////////////////////////*/
 
-* {
+* ,*:before, *:after {
   outline: none !important;
+  -webkit-box-sizing: border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
-
 body {
   font-family: 'Lato' Calibri, Arial, sans-serif;
-    color: #222;
+  color: #222;
+  
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto', sans-serif;
 }
 p, a, li{
     font-family: 'Oxygen', sans-serif;
+    
+}
+div{
+    font-size: 16px;
 }
 a{
    transition: all 0.3s ease-out;
    position: relative;
-   padding: .5em;
-   margin: -.5em;
+   text-decoration: none;
 }
 
 
@@ -37,4 +44,90 @@ a:hover {
     width: 100%;
     height: auto;
     max-width: 100%;
+}
+
+/* HEADER */
+#header{
+    display:flex;
+    justify-content:space-between ;
+    height:95px;
+    padding-top:30px;
+    width:100%;
+    padding:30px 40px 15px;
+    border-bottom:1px solid #d6d6d6;
+}
+.header-right{
+    display:flex;
+
+}
+.header-call{
+    font-size: 14px;
+    color:#666666;
+    vertical-align:bottom;
+    line-height:50px;
+    padding-right:20px;
+
+}
+.header-contact{
+    line-height:30px;
+    background-color:#666666;
+    color:#ffffff;
+    padding:10px 25px;
+    font-size: 14px;
+}
+
+/* MAIN */
+#main{
+    padding-top:50px;
+    
+}
+#main .container{
+    width:800px;
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.main-left img{
+    width:120px;
+    height:auto;
+}
+.main-right{
+    width:500px;
+}
+.main-message{
+    font-size: 18px;
+    padding-top:50px;
+    font-family:  'Sawarabi Mincho';
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.main-head{
+    font-size: 12px;
+    padding-top:40px;
+}
+.main-content{
+    display:flex;
+    justify-content: space-between;
+    
+    
+}
+.main-word{
+    font-size: 35px;
+    text-align: left;
+    padding:30px 0;
+    font-family:  'Sawarabi Mincho';
+    letter-spacing: 1px;
+
+}
+.main-content img{
+    width:200px;
+    height:100%;
+
+}
+
+.main-txt{
+    font-size: 13px;
+    padding-top:20px;
+    line-height:23px;
 }
