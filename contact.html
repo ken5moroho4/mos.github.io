@@ -1,0 +1,78 @@
+<!-- headerが入ります -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact_us</title>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css/styles.css">
+  </head>
+  <body>
+
+<!-- header -->
+      <div id="header"></div>
+
+
+    <section class="container">
+
+
+      <section class="contact_container">
+
+
+        <div class="contact_title">
+          <h1>お問い合わせ</h1>
+        </div>
+
+        <div class="contact_thema">
+          <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+          <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入りますここにテキストが入ります。</p>
+        </div>
+
+        <div class="contact_form">
+
+          <section class="contact_record">
+            <div class="contact_toc">
+              <p>名前：</p>
+            </div>
+            <div class="contact_input">
+              <input type="text" name="name" value="" placeholder="名前を入力">
+            </div>
+          </section>
+
+          <section class="contact_record">
+            <div class="contact_toc">
+              <p>メールアドレス：</p>
+            </div>
+            <div class="contact_input">
+              <input type="text" name="mail_address" value="" placeholder="yourAddress@example.com">
+            </div>
+          </section>
+
+          <section class="contact_record">
+            <div class="contact_toc">
+              <p>メッセージ：</p>
+            </div>
+              <input type="text" name="message" value="" placeholder="メッセージ">
+          </section>
+
+          <section class="contact_record_button">
+            <div class="contact_button">
+              <a href="#">送信</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+    $(function() {
+      $("#header").load("header.html");
+    });
+    </script>
+
+  </body>
+</html>
+
+<!-- footerが入ります -->

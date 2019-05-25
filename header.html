@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/hiraku.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+<style>
+  article, aside, dialog, figure, footer, header,
+  hgroup, menu, nav, section { display: block; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+  <button class="hiraku-open-btn" id="offcanvas-btn-left" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+    <span class="hiraku-open-btn-line"></span>
+  </button>
+  <div class="header-right">
+    <div class="header-call">TEL テキストテキスト</div>
+    <a href="info.html" class="header-contact">お問い合わせ ></a>
+  </div>
+<div class="offcanvas-left">
+  <ul class="header-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#message">Message</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#profile">Company Profile</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- SCRIPT -->
+<script>
+$(".offcanvas-left").hiraku({
+  btn:"#offcanvas-btn-left",
+  direction:"left"
+  });
+</script>
+<style>
+  .js-hiraku-offcanvas-body-right .js-hiraku-header-fixed {
+  margin-left: -300px;
+  }
+  .js-hiraku-offcanvas-body-left .js-hiraku-header-fixed {
+      margin-left: 300px;
+  }
+  .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar-left {
+      margin-left:-300px;
+  }
+  .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar-right {
+      margin-right:300px;
+  }
+  .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar {
+      width:300px;
+  }
+  .js-hiraku-offcanvas-body-left {
+      left:300px;
+  }
+  .js-hiraku-offcanvas-body-right {
+      right:300px;
+  }
+</style>
+</body>
+</html>

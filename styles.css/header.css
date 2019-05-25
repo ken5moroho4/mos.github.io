@@ -1,0 +1,43 @@
+@import "global.css";
+/* HEADER */
+#header{
+    display:flex;
+    justify-content:space-between ;
+    height:95px;
+    padding-top:30px;
+    width:100%;
+    padding:30px 40px 15px;
+    border-bottom:1px solid #d6d6d6;
+}
+.header-right{
+    display:flex;
+
+}
+.header-call{
+    font-size: 14px;
+    color:#666666;
+    vertical-align:bottom;
+    line-height:50px;
+    padding-right:20px;
+
+}
+.header-contact{
+    line-height:30px;
+    background-color:#666666;
+    color:#ffffff;
+    padding:10px 25px;
+    font-size: 14px;
+}
+/* HEADER OPEN */
+.header-list{
+    padding:40px 20px;
+}
+.header-list li{
+    padding:10px 5px;
+    font-weight: bold;
+    list-style: none;
+
+}
+.header-list a{
+     color:#222;
+}

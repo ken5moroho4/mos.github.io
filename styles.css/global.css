@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* /////////////////////////////////////////////////////////////////////
+//  - Global
+/////////////////////////////////////////////////////////////////////*/
+
+* ,*:before, *:after {
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: 'Lato' Calibri, Arial, sans-serif;
+  color: #222;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p, a, li{
+    font-family: 'Oxygen', sans-serif;
+}
+div{
+    font-size: 16px;
+}
+a{
+   transition: all 0.3s ease-out;
+   position: relative;
+   text-decoration: none;
+}
+button{
+  transition: all 0.3s ease-out;
+  position: relative;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+   text-decoration: none;
+   color: #00ceb8;
+}
+button:hover {
+  color: white;
+}
