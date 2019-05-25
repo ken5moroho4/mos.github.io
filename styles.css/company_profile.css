@@ -1,0 +1,62 @@
+#company_profile{
+    padding-top:30px;
+    font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif !important;
+}
+#company_profile .container{
+    width:800px;
+    margin:0 auto;
+}
+.cPSection {
+  margin-bottom: 2%;
+}
+.cPSection a:visited {
+  color: inherit;
+}
+.cPSection a {
+  color: inherit;
+}
+.cPSection a:hover {
+   text-decoration: none;
+   color: #00ceb8;
+}
+.cPTitle {
+  font-size: 20px;
+}
+.cPName {
+  font-weight:bold;
+  font-size: 20px;
+}
+.cPOverview {
+  display: flex;
+  justify-content: space-between;
+}
+.cPOverview li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.cPOverview .bold {
+  font-weight: 600;
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.cPOverview .boldWide {
+  font-weight: 600;
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.cPOverview .wide {
+  list-style: none;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.cPORContact {
+  text-align: center;
+  border: solid 3px black;
+  margin-bottom: 18px;
+  padding: 8px 90px;
+  display: inline-block;
+  text-decoration: none;
+}
