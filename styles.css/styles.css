@@ -75,6 +75,20 @@ a:hover {
     padding:10px 25px;
     font-size: 14px;
 }
+/* HEADER OPEN */
+.header-list{
+    padding:40px 20px;
+}
+.header-list li{
+    padding:10px 5px;
+    font-weight: bold;
+    list-style: none;
+   
+}
+.header-list a{
+     color:#222;
+}
+
 
 /* MAIN */
 #main{
