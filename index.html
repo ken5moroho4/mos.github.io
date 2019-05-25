@@ -14,28 +14,8 @@
 </style>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header id="header">
-    <button class="hiraku-open-btn" id="offcanvas-btn-left" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
-      <span class="hiraku-open-btn-line"></span>
-    </button>
-    <div class="header-right">
-      <div class="header-call">TEL テキストテキスト</div>
-      <a href="info.html" class="header-contact">お問い合わせ ></a>
-    </div>
-  </header>
-  <div class="offcanvas-left">
-    <ul class="header-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#service">Service</a></li>
-      <li><a href="#message">Message</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#profile">Company Profile</a></li>
-      <li><a href="#info">Info</a></li>
-    </ul>
-  </div>
-
+  <!-- header -->
+  <div id="header"></div>
 
   <!-- MAIN -->
   <div id="main">
@@ -52,38 +32,13 @@
       </div>
       <div class="main-txt">過去に私自身が「イジメ」「暴力」「ネグレクト」「不登校」といった現代社会の中で問題とされているものを経験してきました。<br>当時は、「一人ぼっち」と感じながら様々なことを耐える日々を送っていました。そんな中、私を助けてくれた一人の友達がいます。<br>今までずっと、たった一人だと思っていた自分の世界観の中で「初めて味方ができた」と感じる事ができました。<br>その友達に救われた経験を通して私は、『たった一人、本当にたった一人だけでいいから、自分の味方になってくれる存在がいたら、人は救われる』という、とても大切なことに学びました。<br>自分自身が当事者であり、救われた経験があるからこそ今度は私自身が誰かの「まず一人目の味方」になったり、同じように誰かのまず一人目になる人たちを増やしたい。何か悩みを抱えた人たちが「ここが自分の居場所だ」と思える居場所を作る存在でありたいと強く想うと同時に、私の人生の全身全霊をかけて成し遂げていきます。</div>
     </div>
-  </div>  
   </div>
-
+</div>
   <!-- SCRIPT -->
   <script>
-  $(".offcanvas-left").hiraku({
-    btn:"#offcanvas-btn-left",
-    direction:"left"
-    });  
+  $(function() {
+    $("#header").load("header.html");
+  });
   </script>
-  <style>
-    .js-hiraku-offcanvas-body-right .js-hiraku-header-fixed {
-    margin-left: -300px;
-    }
-    .js-hiraku-offcanvas-body-left .js-hiraku-header-fixed {
-        margin-left: 300px;
-    }
-    .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar-left {
-        margin-left:-300px;
-    }
-    .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar-right {
-        margin-right:300px;
-    }
-    .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar {
-        width:300px;
-    }
-    .js-hiraku-offcanvas-body-left {
-        left:300px;
-    }
-    .js-hiraku-offcanvas-body-right {
-        right:300px;
-    }
-  </style>
 </body>
 </html>
