@@ -8,6 +8,7 @@
 <script src="js/hiraku.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+<script src="js/swiper.js"></script>
 <style>
   article, aside, dialog, figure, footer, header,
   hgroup, menu, nav, section { display: block; }
@@ -17,7 +18,7 @@
   <!-- header -->
   <div id="header"></div>
 
-  <!-- MAIN -->
+  <!-- main -->
   <div id="main">
   <div class="container">
     <div class="main-left">
@@ -34,6 +35,73 @@
     </div>
   </div>
 </div>
+
+<!-- content -->
+<div id="contents">
+  <div class="container">
+    <div class="content">
+      <img src="img/test_img.png">
+      <div class="content-heading">コンセプト</div>
+      <div class="content-en">Concept</div>
+      <div class="content-txt">血の繋がりはないかもしれないけど、たくさんの「時間」や「コト」を共有する中で『家族のような人たちが集まる第二の家』をつくり、自分の居場所がない子どもたちをゼロにします。</div>
+      <a href="#">VIEW MORE</a>
+    </div>
+    <div class="content">
+      <img src="img/test_img.png">
+      <div class="content-heading">ビジョン</div>
+      <div class="content-en">Vision</div>
+      <div class="content-txt">『自分の居場所がない子供たちをゼロにする』ここに来るとみんなが居て、みんなが笑顔になれる地域の人たちみんなで協力し合い子供たちの成長を見守ります。</div>
+      <a href="#">VIEW MORE</a>
+    </div>
+    <div class="content">
+      <img src="img/test_img.png">
+      <div class="content-heading">内容</div>
+      <div class="content-en">Contents</div>
+      <div class="content-txt">子ども、親、ご年配、ユース（児童養護施設、里親家族出身の若者）など、様々な層の方たちを集めて、みんなで一緒にご飯を作ってみんなで食べたり、ゲームや体験などのレクリエーションを行います。</div>
+      <a href="#">VIEW MORE</a>
+    </div>
+  </div>
+</div>
+
+<!-- message -->
+<div id="message">
+  <div class="container">
+    <div class="message-inner">
+      <div class="message-left">
+        <div class="message-en">MESSAGE</div>
+        <div class="message-heading">設立の背景</div>
+        <div class="message-txt">共働きの家庭が年々増加しており、それに伴って一人で孤独を感じながらご飯を食べる子どもたちも年々増加しています。そして、今では、日本の子どもの約５人に１人が「孤食」を余儀無くされています。さらに、様々な理由から親、ご年配、ユースのそれぞれの層で、「孤立」が起こり、「孤独」を感じている人が多くいます。また、様々なコミュニケーションツールが溢れている現代、人と人とがリアルでコミュニケーションを取ることが少なくなっていると同時に地域コミュニケーションがどんどん衰退しており、地域コミュニティの衰退によって昭和にはあった「地域で子どもを育てる」という文化が無くなりつつあります。</div>
+        <div class="message-auther">COOK KIDS</div>
+      </div>
+      <div class="message-right">
+        <img src="img/test_img.png">
+      </div>
+    </div>
+    <div class="message-repute">
+      <div class="message-top">ここに来るとみんなが居て、みんなが笑顔になれる。<br>地域の人たちでみんなで協力し合い子どもたちの成長を見守ります。</div>
+      <a href="#" class="message-url">詳しくはこちらよりお問い合わせください  ></a>
+    </div>
+  </div>
+</div>
+
+<!-- works -->
+<div id="works">
+  <div class="works-heading">WORKS</div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper01"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper02"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+      <div class="swiper-slide"><img src="img/test_img.png" alt="Swiper03"></div>
+    </div>
+  </div>
+</div>
+
   <!-- map -->
   <div id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5588945598884!2d139.7340312157123!3d35.663238038565005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b65e8a41423%3A0x1bde9699eaa6eb85!2z44OW44Op44Oz44OH44Kj44Oz44Kw44Kr44Oz44OR44OL44O8U0lOQ0Uu!5e0!3m2!1sja!2sjp!4v1558792220454!5m2!1sja!2sjp" width="93%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>  <!-- SCRIPT -->
@@ -41,6 +109,25 @@
   <script>
   $(function() {
     $("#header").load("header.html");
+  });
+
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop:true,
+    observer: true,
+    slidesPerView:4.3,
+    spaceBetween: 30,
+    initialSlide: 1.5,
+
+    breakpoints: {
+    767: {
+      slidesPerView: 4,
+      spaceBetween: 0
+    }
+  }
   });
   </script>
 </body>
