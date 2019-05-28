@@ -1,8 +1,8 @@
 #message{
-    padding-top:90px;
+    padding-top:100px;
 }
 #message .container{
-    width:800px;
+    width:900px;
     margin:0 auto;
     
 }
@@ -13,17 +13,20 @@
 .message-left{
     width:66%;
 }
+.message-en{
+  font-size: 18px;
+}
 .message-heading{
     font-size: 30px;
     font-family:  'Sawarabi Mincho';
     padding:15px 0 20px;
 }
 .message-txt{
-    font-size: 12px;
+    font-size: 14px;
 }
 .message-auther{
     text-align: right;
-    font-size: 14px;
+    font-size: 15px;
     padding-top:5px;
     font-style: italic;
 }
