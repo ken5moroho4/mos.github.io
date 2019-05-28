@@ -11,7 +11,29 @@
   <body>
 
 <!-- header -->
-      <div id="header"></div>
+    <div id="header">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <div class="offcanvas-left">
+            <ul class="header-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#contents">Service</a></li>
+              <li><a href="index.html#message">Message</a></li>
+              <li><a href="index.html#works">Works</a></li>
+              <li><a href="index.html#company_profile">Company Profile</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+     </div>
+     <div class="header-right">
+      <div class="header-call">TEL テキストテキスト</div>
+      <a href="contact.html" class="header-contact">お問い合わせ ></a>
+     </div>
+    </div>
 
 
     <section class="container">
@@ -66,11 +88,7 @@
     </section>
 
     <!-- SCRIPT -->
-    <script>
-    $(function() {
-      $("#header").load("header.html");
-    });
-    </script>
+    
 
   </body>
 </html>
